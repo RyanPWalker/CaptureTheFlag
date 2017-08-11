@@ -1,0 +1,793 @@
+﻿Log file open, 07/30/17 18:25:02
+LogInit:Display: Running engine for game: CaptureTheFlag
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1648214007) SRandInit(-1648214007).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.203056
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3514769
+LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.07.31-01.25.03:661][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.31-01.25.03:661][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.31-01.25.03:697][  0]LogInit: Computer: DESKTOP-FLFRCNR
+[2017.07.31-01.25.03:697][  0]LogInit: User: visgu
+[2017.07.31-01.25.03:697][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.07.31-01.25.03:697][  0]LogInit: High frequency timer resolution =2.145336 MHz
+[2017.07.31-01.25.03:697][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.07.31-01.25.03:697][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.31-01.25.03:697][  0]LogMemory: Process Physical Memory: 272.31 MB used, 272.31 MB peak
+[2017.07.31-01.25.03:697][  0]LogMemory: Process Virtual Memory: 259.00 MB used, 259.00 MB peak
+[2017.07.31-01.25.03:697][  0]LogMemory: Physical Memory: 6267.36 MB used,  1795.35 MB free, 8062.71 MB total
+[2017.07.31-01.25.03:697][  0]LogMemory: Virtual Memory: 621.34 MB used,  1795.35 MB free, 134217728.00 MB total
+[2017.07.31-01.25.03:815][  0]LogInit: Using OS detected language (en-US).
+[2017.07.31-01.25.03:815][  0]LogInit: Using OS detected locale (en-US).
+[2017.07.31-01.25.03:987][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.07.31-01.25.08:808][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.31-01.25.08:816][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 5500' (Feature Level 11_0)
+[2017.07.31-01.25.08:816][  0]LogD3D11RHI:       128/0/4031 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2017.07.31-01.25.08:818][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.07.31-01.25.08:818][  0]LogD3D11RHI:       0/0/4031 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.07.31-01.25.08:818][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.31-01.25.08:828][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.31-01.25.08:828][  0]LogD3D11RHI:     GPU DeviceId: 0x1616 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.31-01.25.08:828][  0]LogWindows: EnumDisplayDevices:
+[2017.07.31-01.25.08:828][  0]LogWindows:    0. 'Intel(R) HD Graphics 5500' (P:1 D:1)
+[2017.07.31-01.25.08:828][  0]LogWindows:    1. 'Intel(R) HD Graphics 5500' (P:0 D:0)
+[2017.07.31-01.25.08:828][  0]LogWindows:    2. 'Intel(R) HD Graphics 5500' (P:0 D:0)
+[2017.07.31-01.25.08:829][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.07.31-01.25.08:829][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 5500
+[2017.07.31-01.25.08:829][  0]LogD3D11RHI:   Driver Version: 20.19.15.4549 (internal:20.19.15.4549, unified:20.19.15.4549)
+[2017.07.31-01.25.08:829][  0]LogD3D11RHI:      Driver Date: 11-10-2016
+[2017.07.31-01.25.08:829][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.31-01.25.08:838][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.31-01.25.08:845][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2017.07.31-01.25.08:847][  0]LogShaderCompilers: Guid format shader working directory is -33 characters bigger than the processId version (../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Intermediate/Shaders/WorkingDirectory/8732/).
+[2017.07.31-01.25.08:847][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/visgu/AppData/Local/Temp/UnrealShaderWorkingDir/41E77C0A416352303C454D83F1183256/'.
+[2017.07.31-01.25.08:847][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.31-01.25.13:564][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.31-01.25.13:692][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.07.31-01.25.13:810][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.07.31-01.25.13:917][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.07.31-01.25.14:072][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.07.31-01.25.14:180][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.31-01.25.14:276][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.31-01.25.14:390][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.31-01.25.14:497][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.31-01.25.14:672][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.31-01.25.14:799][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.31-01.25.14:897][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.31-01.25.15:006][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.31-01.25.15:101][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.31-01.25.15:201][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.31-01.25.15:435][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.31-01.25.15:435][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.31-01.25.15:504][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.31-01.25.15:791][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.31-01.25.15:868][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.31-01.25.15:984][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.07.31-01.25.16:082][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.31-01.25.16:199][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.31-01.25.16:308][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.31-01.25.16:308][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.31-01.25.18:008][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache: Loaded boot cache 1.05s 90MB C:/Users/visgu/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/visgu/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.31-01.25.19:060][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.31-01.25.19:084][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.31-01.25.19:096][  0]LogDerivedDataCache: Using Local data cache path C:/Users/visgu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.31-01.25.19:109][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.07.31-01.25.19:110][  0]LogSlate: Using Freetype 2.6.0
+[2017.07.31-01.25.19:125][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.31-01.25.19:125][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.31-01.25.21:652][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.31-01.25.21:767][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.31-01.25.22:143][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.07.31-01.25.22:284][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.07.31-01.25.22:442][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.07.31-01.25.22:442][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.07.31-01.25.22:442][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.31-01.25.23:618][  0]LogNetVersion: CaptureTheFlag , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 317260116)
+[2017.07.31-01.25.23:712][  0]LogAssetRegistry: FAssetRegistry took 0.0267 seconds to start up
+[2017.07.31-01.25.23:845][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.073766 seconds
+[2017.07.31-01.25.23:857][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.07.31-01.25.23:857][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.07.31-01.25.23:857][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.31-01.25.24:023][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.31-01.25.54:834][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.07.31-01.25.54:918][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.31-01.25.56:240][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.07.31-01.25.57:110][  0]SourceControl: Info Source control is disabled
+[2017.07.31-01.25.57:112][  0]SourceControl: Info Source control is disabled
+[2017.07.31-01.25.57:214][  0]SourceControl: Info Source control is disabled
+[2017.07.31-01.25.57:337][  0]SourceControl: Info Source control is disabled
+[2017.07.31-01.25.59:117][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.07.31-01.26.00:602][  0]LogEngine: Initializing Engine...
+[2017.07.31-01.26.00:603][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.07.31-01.26.00:963][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.31-01.26.00:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.31-01.26.01:367][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.07.31-01.26.01:377][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.31-01.26.01:402][  0]LogInit: FAudioDevice initialized.
+[2017.07.31-01.26.01:478][  0]LogDerivedDataCache: Saved boot cache 0.08s 90MB C:/Users/visgu/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.31-01.26.01:489][  0]LogInit: Texture streaming: Enabled
+[2017.07.31-01.26.01:826][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.07.31-01.26.02:544][  0]LogInit: Transaction tracking system initialized
+[2017.07.31-01.26.03:543][  0]BlueprintLog: New page: Editor Load
+[2017.07.31-01.26.06:914][  0]LocalizationService: Info Localization service is disabled
+[2017.07.31-01.26.09:484][  0]LogConsoleResponse:Display: 
+[2017.07.31-01.26.09:858][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.07.31-01.26.09:858][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.31-01.26.09:989][  0]LogFileCache: Scanning file cache for directory 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/' took 0.01s
+[2017.07.31-01.26.13:028][  0]SourceControl: Info Source control is disabled
+[2017.07.31-01.26.13:101][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.16/FeaturePacks/MobileStarterContent.upack)
+[2017.07.31-01.26.13:130][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2017.07.31-01.26.13:149][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Floor_400x400.uasset"
+[2017.07.31-01.26.13:151][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Pillar_50x500.uasset"
+[2017.07.31-01.26.13:154][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_400x200.uasset"
+[2017.07.31-01.26.13:159][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_400x300.uasset"
+[2017.07.31-01.26.13:161][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_400x400.uasset"
+[2017.07.31-01.26.13:164][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_500x500.uasset"
+[2017.07.31-01.26.13:166][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_Door_400x300.uasset"
+[2017.07.31-01.26.13:168][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_Door_400x400.uasset"
+[2017.07.31-01.26.13:170][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_Window_400x300.uasset"
+[2017.07.31-01.26.13:172][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Wall_Window_400x400.uasset"
+[2017.07.31-01.26.13:175][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Collapse01.uasset"
+[2017.07.31-01.26.13:178][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Collapse02.uasset"
+[2017.07.31-01.26.13:180][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Collapse_Cue.uasset"
+[2017.07.31-01.26.13:182][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Explosion01.uasset"
+[2017.07.31-01.26.13:184][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Explosion02.uasset"
+[2017.07.31-01.26.13:187][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Explosion_Cue.uasset"
+[2017.07.31-01.26.13:192][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Fire01.uasset"
+[2017.07.31-01.26.13:212][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Fire01_Cue.uasset"
+[2017.07.31-01.26.13:215][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Fire_Sparks01.uasset"
+[2017.07.31-01.26.13:228][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2017.07.31-01.26.13:231][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Light01.uasset"
+[2017.07.31-01.26.13:233][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Light01_Cue.uasset"
+[2017.07.31-01.26.13:235][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light02.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Light02.uasset"
+[2017.07.31-01.26.13:237][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Light02_Cue.uasset"
+[2017.07.31-01.26.13:241][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Smoke01.uasset"
+[2017.07.31-01.26.13:255][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Smoke01_Cue.uasset"
+[2017.07.31-01.26.13:259][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Background_Cue.uasset"
+[2017.07.31-01.26.13:326][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Birds01.uasset"
+[2017.07.31-01.26.13:336][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Music01.uasset"
+[2017.07.31-01.26.13:337][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Music_Cue.uasset"
+[2017.07.31-01.26.13:342][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Wind05.uasset"
+[2017.07.31-01.26.13:347][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Starter_Wind06.uasset"
+[2017.07.31-01.26.13:350][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Steam01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Steam01.uasset"
+[2017.07.31-01.26.13:352][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Audio/Steam01_Cue.uasset"
+[2017.07.31-01.26.13:357][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2017.07.31-01.26.13:359][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2017.07.31-01.26.13:361][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2017.07.31-01.26.13:362][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2017.07.31-01.26.13:364][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2017.07.31-01.26.13:366][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2017.07.31-01.26.13:369][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Maps/Minimal_Default.umap"
+[2017.07.31-01.26.13:371][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2017.07.31-01.26.13:520][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/StarterMap.umap" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Maps/StarterMap.umap"
+[2017.07.31-01.26.13:628][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Maps/StarterMap_BuiltData.uasset"
+[2017.07.31-01.26.13:637][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Basic_Floor.uasset"
+[2017.07.31-01.26.13:652][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Basic_Wall.uasset"
+[2017.07.31-01.26.13:655][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2017.07.31-01.26.13:670][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Brick_Clay_New.uasset"
+[2017.07.31-01.26.13:686][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2017.07.31-01.26.13:689][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2017.07.31-01.26.13:715][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2017.07.31-01.26.13:720][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2017.07.31-01.26.13:722][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2017.07.31-01.26.13:739][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2017.07.31-01.26.13:742][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2017.07.31-01.26.13:745][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Concrete_Grime.uasset"
+[2017.07.31-01.26.13:747][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Concrete_Panels.uasset"
+[2017.07.31-01.26.13:766][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Concrete_Poured.uasset"
+[2017.07.31-01.26.13:768][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Concrete_Tiles.uasset"
+[2017.07.31-01.26.13:770][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Glass.uasset"
+[2017.07.31-01.26.13:774][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Ground_Grass.uasset"
+[2017.07.31-01.26.13:777][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Ground_Gravel.uasset"
+[2017.07.31-01.26.13:780][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Ground_Moss.uasset"
+[2017.07.31-01.26.13:783][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2017.07.31-01.26.13:819][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2017.07.31-01.26.13:822][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Chrome.uasset"
+[2017.07.31-01.26.13:825][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Copper.uasset"
+[2017.07.31-01.26.13:827][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Gold.uasset"
+[2017.07.31-01.26.13:829][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Rust.uasset"
+[2017.07.31-01.26.13:832][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Metal_Steel.uasset"
+[2017.07.31-01.26.13:853][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Rock_Basalt.uasset"
+[2017.07.31-01.26.13:855][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2017.07.31-01.26.13:859][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Rock_Sandstone.uasset"
+[2017.07.31-01.26.13:862][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Rock_Slate.uasset"
+[2017.07.31-01.26.13:864][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2017.07.31-01.26.13:879][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2017.07.31-01.26.13:882][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2017.07.31-01.26.13:887][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Tech_Panel.uasset"
+[2017.07.31-01.26.13:912][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Water_Lake.uasset"
+[2017.07.31-01.26.13:915][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Water_Ocean.uasset"
+[2017.07.31-01.26.13:920][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2017.07.31-01.26.13:922][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2017.07.31-01.26.13:940][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Wood_Oak.uasset"
+[2017.07.31-01.26.13:945][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Wood_Pine.uasset"
+[2017.07.31-01.26.13:947][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Materials/M_Wood_Walnut.uasset"
+[2017.07.31-01.26.13:958][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/P_Ambient_Dust.uasset"
+[2017.07.31-01.26.13:976][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/P_Explosion.uasset"
+[2017.07.31-01.26.13:979][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/P_Fire.uasset"
+[2017.07.31-01.26.13:981][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/P_Smoke.uasset"
+[2017.07.31-01.26.13:985][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/P_Sparks.uasset"
+[2017.07.31-01.26.13:988][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_Burst.uasset"
+[2017.07.31-01.26.13:997][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2017.07.31-01.26.14:000][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2017.07.31-01.26.14:002][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2017.07.31-01.26.14:004][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/m_flare_01.uasset"
+[2017.07.31-01.26.14:005][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2017.07.31-01.26.14:009][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2017.07.31-01.26.14:012][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2017.07.31-01.26.14:014][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Particles/Materials/M_Spark.uasset"
+[2017.07.31-01.26.14:062][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/MaterialSphere.uasset"
+[2017.07.31-01.26.14:073][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Bush.uasset"
+[2017.07.31-01.26.14:088][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Chair.uasset"
+[2017.07.31-01.26.14:091][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_CornerFrame.uasset"
+[2017.07.31-01.26.14:094][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Couch.uasset"
+[2017.07.31-01.26.14:097][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Door.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Door.uasset"
+[2017.07.31-01.26.14:114][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_DoorFrame.uasset"
+[2017.07.31-01.26.14:117][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_GlassWindow.uasset"
+[2017.07.31-01.26.14:145][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2017.07.31-01.26.14:148][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Lamp_Wall.uasset"
+[2017.07.31-01.26.14:169][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2017.07.31-01.26.14:186][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_PillarFrame.uasset"
+[2017.07.31-01.26.14:190][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_PillarFrame300.uasset"
+[2017.07.31-01.26.14:193][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Rock.uasset"
+[2017.07.31-01.26.14:196][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Shelf.uasset"
+[2017.07.31-01.26.14:198][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Stairs.uasset"
+[2017.07.31-01.26.14:204][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_Statue.uasset"
+[2017.07.31-01.26.14:223][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_TableRound.uasset"
+[2017.07.31-01.26.14:227][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/SM_WindowFrame.uasset"
+[2017.07.31-01.26.14:238][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Bush.uasset"
+[2017.07.31-01.26.14:242][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Chair.uasset"
+[2017.07.31-01.26.14:245][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Door.uasset"
+[2017.07.31-01.26.14:247][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Frame.uasset"
+[2017.07.31-01.26.14:250][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Lamp.uasset"
+[2017.07.31-01.26.14:255][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2017.07.31-01.26.14:305][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2017.07.31-01.26.14:309][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Rock.uasset"
+[2017.07.31-01.26.14:311][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Shelf.uasset"
+[2017.07.31-01.26.14:314][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_Statue.uasset"
+[2017.07.31-01.26.14:317][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_StatueGlass.uasset"
+[2017.07.31-01.26.14:323][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Props/Materials/M_TableRound.uasset"
+[2017.07.31-01.26.14:327][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Cone.uasset"
+[2017.07.31-01.26.14:346][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Cube.uasset"
+[2017.07.31-01.26.14:359][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Cylinder.uasset"
+[2017.07.31-01.26.14:362][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2017.07.31-01.26.14:373][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Pipe.uasset"
+[2017.07.31-01.26.14:376][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Pipe_180.uasset"
+[2017.07.31-01.26.14:379][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Pipe_90.uasset"
+[2017.07.31-01.26.14:393][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Plane.uasset"
+[2017.07.31-01.26.14:394][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2017.07.31-01.26.14:400][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Sphere.uasset"
+[2017.07.31-01.26.14:421][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Torus.uasset"
+[2017.07.31-01.26.14:441][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Trim.uasset"
+[2017.07.31-01.26.14:443][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2017.07.31-01.26.14:457][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2017.07.31-01.26.14:460][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_TriPyramid.uasset"
+[2017.07.31-01.26.14:475][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Tube.uasset"
+[2017.07.31-01.26.14:477][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Wedge_A.uasset"
+[2017.07.31-01.26.14:489][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_Wedge_B.uasset"
+[2017.07.31-01.26.14:492][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Shapes/Shape_WideCapsule.uasset"
+[2017.07.31-01.26.14:548][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2017.07.31-01.26.14:580][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2017.07.31-01.26.14:643][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2017.07.31-01.26.14:940][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2017.07.31-01.26.14:985][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2017.07.31-01.26.15:017][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2017.07.31-01.26.15:057][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2017.07.31-01.26.15:141][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2017.07.31-01.26.15:218][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2017.07.31-01.26.15:222][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2017.07.31-01.26.15:229][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2017.07.31-01.26.15:234][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2017.07.31-01.26.15:239][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2017.07.31-01.26.15:241][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Burst_M.uasset"
+[2017.07.31-01.26.15:244][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Bush_D.uasset"
+[2017.07.31-01.26.15:246][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Bush_N.uasset"
+[2017.07.31-01.26.15:249][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2017.07.31-01.26.15:252][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2017.07.31-01.26.15:257][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Chair_M.uasset"
+[2017.07.31-01.26.15:261][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Chair_N.uasset"
+[2017.07.31-01.26.15:263][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Checker_Noise_M.uasset"
+[2017.07.31-01.26.15:269][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2017.07.31-01.26.15:271][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2017.07.31-01.26.15:278][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2017.07.31-01.26.15:281][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2017.07.31-01.26.15:290][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2017.07.31-01.26.15:295][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2017.07.31-01.26.15:300][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2017.07.31-01.26.15:305][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2017.07.31-01.26.15:312][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2017.07.31-01.26.15:321][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2017.07.31-01.26.15:327][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2017.07.31-01.26.15:333][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2017.07.31-01.26.15:338][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2017.07.31-01.26.15:344][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2017.07.31-01.26.15:348][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2017.07.31-01.26.15:354][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2017.07.31-01.26.15:357][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2017.07.31-01.26.15:361][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2017.07.31-01.26.15:364][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Door_M.uasset"
+[2017.07.31-01.26.15:366][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Door_N.uasset"
+[2017.07.31-01.26.15:369][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Dust_Particle_D.uasset"
+[2017.07.31-01.26.15:372][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Explosion_SubUV.uasset"
+[2017.07.31-01.26.15:375][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Fire_SubUV.uasset"
+[2017.07.31-01.26.15:378][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2017.07.31-01.26.15:381][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Frame_M.uasset"
+[2017.07.31-01.26.15:383][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Frame_N.uasset"
+[2017.07.31-01.26.15:404][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Gradinet_01.uasset"
+[2017.07.31-01.26.15:423][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ground_Grass_D.uasset"
+[2017.07.31-01.26.15:428][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ground_Grass_N.uasset"
+[2017.07.31-01.26.15:432][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2017.07.31-01.26.15:437][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2017.07.31-01.26.15:442][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_ground_Moss_D.uasset"
+[2017.07.31-01.26.15:447][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Ground_Moss_N.uasset"
+[2017.07.31-01.26.15:457][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Lamp_M.uasset"
+[2017.07.31-01.26.15:460][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Lamp_N.uasset"
+[2017.07.31-01.26.15:465][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_MacroVariation.uasset"
+[2017.07.31-01.26.15:470][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2017.07.31-01.26.15:475][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Copper_D.uasset"
+[2017.07.31-01.26.15:480][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Gold_D.uasset"
+[2017.07.31-01.26.15:483][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Gold_N.uasset"
+[2017.07.31-01.26.15:490][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Rust_D.uasset"
+[2017.07.31-01.26.15:496][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Rust_N.uasset"
+[2017.07.31-01.26.15:499][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Steel_D.uasset"
+[2017.07.31-01.26.15:503][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Metal_Steel_N.uasset"
+[2017.07.31-01.26.15:507][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2017.07.31-01.26.15:509][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_RockMesh_M.uasset"
+[2017.07.31-01.26.15:513][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_RockMesh_N.uasset"
+[2017.07.31-01.26.15:521][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2017.07.31-01.26.15:526][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2017.07.31-01.26.15:529][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2017.07.31-01.26.15:533][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2017.07.31-01.26.15:537][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2017.07.31-01.26.15:554][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Slate_D.uasset"
+[2017.07.31-01.26.15:560][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Slate_N.uasset"
+[2017.07.31-01.26.15:565][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2017.07.31-01.26.15:567][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Shelf_M.uasset"
+[2017.07.31-01.26.15:570][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Shelf_N.uasset"
+[2017.07.31-01.26.15:587][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Single_Tile_N.uasset"
+[2017.07.31-01.26.15:592][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Smoke_SubUV.uasset"
+[2017.07.31-01.26.15:594][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2017.07.31-01.26.15:595][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Spark_Core.uasset"
+[2017.07.31-01.26.15:597][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Statue_M.uasset"
+[2017.07.31-01.26.15:599][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Statue_N.uasset"
+[2017.07.31-01.26.15:601][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_TableRound_M.uasset"
+[2017.07.31-01.26.15:603][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_TableRound_N.uasset"
+[2017.07.31-01.26.15:605][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Dot_M.uasset"
+[2017.07.31-01.26.15:607][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Dot_N.uasset"
+[2017.07.31-01.26.15:609][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2017.07.31-01.26.15:611][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2017.07.31-01.26.15:614][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Panel_M.uasset"
+[2017.07.31-01.26.15:621][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Tech_Panel_N.uasset"
+[2017.07.31-01.26.15:625][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Water_M.uasset"
+[2017.07.31-01.26.15:627][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Water_N.uasset"
+[2017.07.31-01.26.15:632][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2017.07.31-01.26.15:634][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2017.07.31-01.26.15:637][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2017.07.31-01.26.15:641][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Oak_D.uasset"
+[2017.07.31-01.26.15:644][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Oak_N.uasset"
+[2017.07.31-01.26.15:650][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Pine_D.uasset"
+[2017.07.31-01.26.15:654][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Pine_N.uasset"
+[2017.07.31-01.26.15:661][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2017.07.31-01.26.15:663][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2017.07.31-01.26.15:837][  0]LogStaticMesh: Building static mesh Floor_400x400...
+[2017.07.31-01.26.15:864][  0]LogStaticMesh: Built static mesh [0.04s] /Game/MobileStarterContent/Architecture/Floor_400x400.Floor_400x400
+[2017.07.31-01.26.21:433][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:1).
+[2017.07.31-01.26.23:951][  0]LogSavePackage: Save=159.21ms
+[2017.07.31-01.26.23:951][  0]LogSavePackage: Moving '../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/Floor_400x400F32297E4476DABE7CBB24D90C9FFE7DB.tmp' to '../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Floor_400x400.uasset'
+[2017.07.31-01.26.23:963][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/MobileStarterContent/Architecture/Floor_400x400.uasset
+[2017.07.31-01.26.23:963][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2017.07.31-01.26.23:981][  0]Cmd: MAP LOAD FILE="../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.31-01.26.23:982][  0]LightingResults: New page: Lighting Build
+[2017.07.31-01.26.24:060][  0]MapCheck: New page: Map Check
+[2017.07.31-01.26.24:060][  0]LightingResults: New page: Lighting Build
+[2017.07.31-01.26.25:471][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop
+[2017.07.31-01.26.25:506][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_End.ThirdPersonJump_End
+[2017.07.31-01.26.25:547][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonWalk.ThirdPersonWalk
+[2017.07.31-01.26.25:589][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonRun.ThirdPersonRun
+[2017.07.31-01.26.25:617][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonIdle.ThirdPersonIdle
+[2017.07.31-01.26.25:721][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start
+[2017.07.31-01.26.25:746][  0]LogMaterial: Missing cached shader map for material CubeMaterial, compiling. 
+[2017.07.31-01.26.26:471][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_D (AutoDXT, 512X512)
+[2017.07.31-01.26.26:953][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_N (BC5, 512X512)
+[2017.07.31-01.26.27:042][  0]LogTexture:Display: Building textures: T_ML_Aluminum01 (AutoDXT, 512X512)
+[2017.07.31-01.26.27:430][  0]LogTexture:Display: Building textures: T_ML_Aluminum01_N (BC5, 512X512)
+[2017.07.31-01.26.27:524][  0]LogTexture:Display: Building textures: T_UE4_Mannequin_Mobile_M (AutoDXT, 1024X1024)
+[2017.07.31-01.26.27:794][  0]LogTexture:Display: Building textures: T_UE4_Mannequin_Mobile_N (BC5, 1024X1024)
+[2017.07.31-01.26.28:087][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2017.07.31-01.26.28:373][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2017.07.31-01.26.28:647][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2017.07.31-01.26.29:559][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.31-01.26.29:811][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.31-01.26.29:948][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 136.753ms to complete.
+[2017.07.31-01.26.29:948][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 5.967
+[2017.07.31-01.26.31:229][  0]LogCollectionManager: Loaded 0 collections in 0.003354 seconds
+[2017.07.31-01.26.31:588][  0]LogFileCache: Scanning file cache for directory 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/Collections/' took 0.01s
+[2017.07.31-01.26.31:588][  0]LogFileCache: Scanning file cache for directory 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/Developers/visgu/Collections/' took 0.01s
+[2017.07.31-01.26.31:588][  0]LogFileCache: Scanning file cache for directory 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/Collections/' took 0.01s
+[2017.07.31-01.26.31:588][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.07.31-01.26.31:612][  0]LogContentBrowser: Native class hierarchy populated in 0.0223 seconds. Added 2329 classes and 491 folders.
+[2017.07.31-01.26.31:881][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.07.31-01.26.32:726][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2017.07.31-01.26.32:938][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2017.07.31-01.26.33:556][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.31-01.26.33:577][  0]LogSlate: Took 0.000327 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.31-01.26.33:581][  0]LogSlate: Took 0.000327 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.07.31-01.26.33:734][  0]LogSlate: Took 0.019463 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.07.31-01.26.34:039][  0]LogRenderer: Reallocating scene render targets to support 856x372 NumSamples 1 (Frame:1).
+[2017.07.31-01.26.35:095][  0]LogSlate: Took 0.000324 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.31-01.26.35:652][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.07.31-01.26.35:652][  0]LogLoad: (Engine Initialization) Total time: 97.93 seconds
+[2017.07.31-01.26.35:652][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.53 seconds
+[2017.07.31-01.26.35:652][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.07.31-01.26.35:670][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.31-01.26.35:672][  0]LogOcInput: OculusInput pre-init called
+[2017.07.31-01.26.35:672][  0]LogHMD: Starting GearVRController plugin
+[2017.07.31-01.26.35:788][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.31-01.26.35:874][  1]LogAssetRegistry: Asset discovery search completed in 72.1839 seconds
+[2017.07.31-01.26.35:878][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.07.31-01.26.35:878][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000057 seconds (updated 0 objects)
+[2017.07.31-01.27.27:220][796]LogSlate: Took 0.000380 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x1fb27e67fb8 [can pipeline])
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 1 (Re-using existing connection! (#1) with host datarouter.ol.epicgames.com)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.202.221.101) port 443 (#1))
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 3 (upload completely sent off: 359 out of 359 bytes)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 6 (Closing connection 1)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA0005FB2-4CCD-9F2B-EFB4-428C566CB81A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=7f144887494934c52cd252a5331ee2ea%7Ce3994acd28764336bf7dadb9e4f843e0%7C526f72d9-8d90-4842-94ea-75b0c1e3a8fb&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 9 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.07.31-01.36.47:567][478]LogHttp:Warning: 000001FB258C4580: libcurl info message cache 10 (Closing connection 2)
+[2017.07.31-04.24.13:425][ 63]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.31-04.25.29:624][676]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.31-04.25.30:299][689]LogSlate: Took 0.012345 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.31-04.25.31:769][689]LogSavePackage: Save=950.61ms
+[2017.07.31-04.25.31:769][689]LogSavePackage: Moving '../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/TopDownExampleMap_Auto1D8CC76814D34DD1E4120E6A14CF16F5B.tmp' to '../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/Autosaves/Game/TopDownBP/Maps/TopDownExampleMap_Auto1.umap'
+[2017.07.31-04.25.31:772][689]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/Autosaves/Game/TopDownBP/Maps/TopDownExampleMap_Auto1.umap
+[2017.07.31-04.25.31:836][689]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/TopDownExampleMap' took 1.485
+[2017.07.31-04.25.31:836][689]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.485
+[2017.07.31-04.25.40:040][971]Cmd: TRANSACTION UNDO
+[2017.07.31-04.25.40:040][971]LogEditorTransaction: Undo Clicking on Actors
+[2017.07.31-04.25.43:631][160]Cmd: TRANSACTION UNDO
+[2017.07.31-04.25.43:631][160]LogEditorTransaction: Undo Move Actors
+[2017.07.31-04.25.47:137][339]Cmd: TRANSACTION UNDO
+[2017.07.31-04.25.47:137][339]LogEditorTransaction: Undo Clicking on Actors
+[2017.07.31-04.25.50:332][505]Cmd: TRANSACTION UNDO
+[2017.07.31-04.25.50:333][505]LogEditorTransaction: Undo Clicking on Actors
+[2017.07.31-04.26.39:371][ 99]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.07.31-04.26.45:050][315]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.31-04.26.51:218][403]Cmd: QUIT_EDITOR
+[2017.07.31-04.26.52:063][403]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.31-04.26.52:136][403]LogExit: Preparing to exit.
+[2017.07.31-04.26.53:678][403]LogDirectoryWatcher: A directory notification for 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/' was aborted.
+[2017.07.31-04.26.54:429][403]LogExit: Editor shut down
+[2017.07.31-04.26.54:467][403]LogExit: Transaction tracking system shut down
+[2017.07.31-04.26.56:937][403]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.31-04.26.56:937][403]LogExit: Object subsystem successfully closed.
+[2017.07.31-04.26.57:168][403]LogD3D11RHI: Shutdown
+[2017.07.31-04.26.57:168][403]LogD3D11RHI: CleanupD3DDevice
+[2017.07.31-04.26.57:375][403]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.31-04.26.58:581][403]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.07.31-04.26.58:601][403]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.07.31-04.26.58:601][403]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.07.31-04.26.58:601][403]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.07.31-04.26.58:632][403]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.07.31-04.26.58:640][403]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.07.31-04.26.58:640][403]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.07.31-04.26.58:640][403]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.07.31-04.26.58:640][403]LogDirectoryWatcher: A directory notification for 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/Collections/' was aborted.
+[2017.07.31-04.26.58:640][403]LogDirectoryWatcher: A directory notification for 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/Developers/visgu/Collections/' was aborted.
+[2017.07.31-04.26.58:640][403]LogDirectoryWatcher: A directory notification for 'C:/Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Saved/Collections/' was aborted.
+[2017.07.31-04.26.58:640][403]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.07.31-04.26.58:658][403]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.07.31-04.26.58:658][403]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.07.31-04.26.58:695][403]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.07.31-04.26.58:722][403]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.07.31-04.26.58:729][403]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.07.31-04.26.58:749][403]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.07.31-04.26.58:765][403]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.07.31-04.26.58:788][403]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.07.31-04.26.58:881][403]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.07.31-04.26.58:899][403]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.07.31-04.26.58:931][403]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.07.31-04.26.58:931][403]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.07.31-04.26.58:931][403]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.07.31-04.26.58:931][403]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.07.31-04.26.58:931][403]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.07.31-04.26.58:976][403]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.07.31-04.26.59:003][403]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.07.31-04.26.59:027][403]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.07.31-04.26.59:046][403]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.07.31-04.26.59:046][403]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.07.31-04.26.59:061][403]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.07.31-04.26.59:061][403]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.07.31-04.26.59:062][403]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.07.31-04.26.59:123][403]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.07.31-04.26.59:123][403]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.07.31-04.26.59:123][403]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.07.31-04.26.59:146][403]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.07.31-04.26.59:161][403]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.07.31-04.26.59:161][403]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.07.31-04.26.59:170][403]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.07.31-04.26.59:176][403]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.07.31-04.26.59:195][403]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.07.31-04.26.59:227][403]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.07.31-04.26.59:227][403]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.07.31-04.26.59:344][403]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.07.31-04.26.59:364][403]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.07.31-04.26.59:364][403]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.07.31-04.26.59:372][403]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.07.31-04.26.59:380][403]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.07.31-04.26.59:380][403]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.07.31-04.26.59:381][403]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.07.31-04.26.59:381][403]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.07.31-04.26.59:393][403]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.07.31-04.26.59:415][403]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.07.31-04.26.59:440][403]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.07.31-04.26.59:479][403]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.07.31-04.26.59:502][403]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.07.31-04.26.59:584][403]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.07.31-04.26.59:607][403]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.07.31-04.26.59:640][403]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.07.31-04.26.59:665][403]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.07.31-04.26.59:665][403]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.07.31-04.26.59:685][403]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.07.31-04.26.59:685][403]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.07.31-04.26.59:752][403]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.07.31-04.26.59:752][403]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.07.31-04.26.59:752][403]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.07.31-04.26.59:772][403]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.07.31-04.26.59:772][403]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.07.31-04.26.59:781][403]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.07.31-04.26.59:804][403]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.07.31-04.26.59:817][403]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.07.31-04.26.59:839][403]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.07.31-04.26.59:864][403]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.07.31-04.26.59:864][403]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.07.31-04.26.59:864][403]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.07.31-04.26.59:864][403]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.07.31-04.26.59:864][403]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.07.31-04.26.59:919][403]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.07.31-04.26.59:927][403]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.07.31-04.26.59:937][403]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.07.31-04.27.00:028][403]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.07.31-04.27.00:039][403]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.07.31-04.27.00:039][403]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.07.31-04.27.00:039][403]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.07.31-04.27.00:052][403]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.07.31-04.27.00:059][403]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.07.31-04.27.00:059][403]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.07.31-04.27.00:059][403]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.07.31-04.27.00:059][403]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.07.31-04.27.00:059][403]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.07.31-04.27.00:066][403]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.07.31-04.27.00:066][403]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.07.31-04.27.00:066][403]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.07.31-04.27.00:089][403]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.07.31-04.27.00:089][403]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.07.31-04.27.00:097][403]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.07.31-04.27.00:097][403]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.07.31-04.27.00:108][403]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.07.31-04.27.00:108][403]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.07.31-04.27.00:108][403]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.07.31-04.27.00:108][403]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.07.31-04.27.00:108][403]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.07.31-04.27.00:133][403]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.07.31-04.27.00:149][403]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.07.31-04.27.00:162][403]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.07.31-04.27.00:162][403]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.07.31-04.27.00:162][403]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.07.31-04.27.00:179][403]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.07.31-04.27.00:186][403]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.07.31-04.27.00:197][403]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.07.31-04.27.00:204][403]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.07.31-04.27.00:204][403]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.07.31-04.27.00:204][403]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.07.31-04.27.00:204][403]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.07.31-04.27.00:231][403]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.07.31-04.27.00:243][403]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.07.31-04.27.00:256][403]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.07.31-04.27.00:276][403]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.07.31-04.27.00:287][403]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.07.31-04.27.00:309][403]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.07.31-04.27.00:321][403]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.07.31-04.27.00:321][403]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.07.31-04.27.00:321][403]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.07.31-04.27.00:321][403]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.07.31-04.27.00:334][403]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.07.31-04.27.00:434][403]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.07.31-04.27.00:568][403]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.07.31-04.27.00:613][403]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.07.31-04.27.00:621][403]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.07.31-04.27.00:621][403]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.07.31-04.27.00:632][403]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.07.31-04.27.00:680][403]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.07.31-04.27.00:682][403]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.07.31-04.27.00:682][403]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.07.31-04.27.00:690][403]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.07.31-04.27.00:690][403]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.07.31-04.27.00:722][403]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.07.31-04.27.00:736][403]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.07.31-04.27.00:753][403]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.07.31-04.27.00:753][403]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.07.31-04.27.00:775][403]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.07.31-04.27.00:782][403]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.07.31-04.27.00:801][403]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.07.31-04.27.00:801][403]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.07.31-04.27.00:822][403]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.07.31-04.27.00:823][403]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.07.31-04.27.00:855][403]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.07.31-04.27.00:871][403]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.07.31-04.27.00:910][403]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.07.31-04.27.00:940][403]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.07.31-04.27.01:001][403]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.07.31-04.27.01:001][403]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.07.31-04.27.01:001][403]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.07.31-04.27.01:042][403]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.07.31-04.27.01:042][403]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.07.31-04.27.01:046][403]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.07.31-04.27.01:258][403]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.31-04.27.01:258][403]LogDirectoryWatcher: A directory notification for '../../../../../../Users/visgu/OneDrive/Documents/Unreal Projects/CaptureTheFlag/Content/' was aborted.
+[2017.07.31-04.27.01:258][403]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.31-04.27.01:258][403]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.07.31-04.27.01:280][403]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.07.31-04.27.01:287][403]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.07.31-04.27.01:287][403]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.07.31-04.27.01:287][403]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.07.31-04.27.01:287][403]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.07.31-04.27.01:313][403]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.07.31-04.27.01:322][403]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.07.31-04.27.01:322][403]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.07.31-04.27.01:334][403]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.07.31-04.27.01:367][403]LogDerivedDataCache: Shutdown
+[2017.07.31-04.27.01:367][403]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.07.31-04.27.01:367][403]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.07.31-04.27.01:401][403]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.07.31-04.27.01:424][403]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.07.31-04.27.01:455][403]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.07.31-04.27.01:469][403]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.07.31-04.27.01:501][403]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.07.31-04.27.01:501][403]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.07.31-04.27.01:501][403]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.07.31-04.27.01:501][403]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.07.31-04.27.01:508][403]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.07.31-04.27.01:530][403]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.07.31-04.27.01:530][403]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.07.31-04.27.01:533][403]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.07.31-04.27.01:554][403]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.07.31-04.27.01:573][403]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.07.31-04.27.01:593][403]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.07.31-04.27.01:593][403]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.07.31-04.27.01:622][403]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.07.31-04.27.01:633][403]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.07.31-04.27.01:633][403]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.07.31-04.27.01:652][403]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.07.31-04.27.01:652][403]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.07.31-04.27.01:652][403]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.07.31-04.27.01:652][403]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.31-04.27.01:691][403]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.07.31-04.27.01:726][403]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.07.31-04.27.01:726][403]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.31-04.27.01:735][403]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA0005FB2-4CCD-9F2B-EFB4-428C566CB81A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=7f144887494934c52cd252a5331ee2ea%7Ce3994acd28764336bf7dadb9e4f843e0%7C526f72d9-8d90-4842-94ea-75b0c1e3a8fb&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.31-04.27.01:755][403]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.07.31-04.27.01:791][403]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.07.31-04.27.01:804][403]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.07.31-04.27.01:826][403]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.07.31-04.27.01:826][403]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.07.31-04.27.01:862][403]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.07.31-04.27.01:862][403]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.07.31-04.27.01:862][403]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.07.31-04.27.01:862][403]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.07.31-04.27.01:882][403]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.07.31-04.27.01:898][403]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.07.31-04.27.01:898][403]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.07.31-04.27.01:904][403]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.07.31-04.27.01:905][403]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.07.31-04.27.01:905][403]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.07.31-04.27.01:905][403]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.07.31-04.27.01:914][403]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.07.31-04.27.01:921][403]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.07.31-04.27.01:936][403]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.07.31-04.27.01:990][403]LogExit: Exiting.
+[2017.07.31-04.27.02:007][403]Log file closed, 07/30/17 21:27:02
